@@ -2,6 +2,8 @@ int x = 500;
 int y = 500;
 int xspeed = 0;
 int yspeed = 0;
+int paddleX = 150;
+int paddleLength = 150;
 PImage backgroundImage;
 void setup(){
  size(1000, 1000);
@@ -23,4 +25,8 @@ fill(255, 255, 255);
 stroke(0, 0, 0);
 x+=xspeed;
 y+=yspeed;
+rect(paddleX, mouseY, 20, 150);
+if(y > mouseY + paddleLength && x > paddleX){
+xspeed *= -1;
+}
 }
