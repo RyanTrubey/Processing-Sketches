@@ -22,5 +22,4 @@ void draw(){
   ellipse(150, 235, 20, 20);
   fill(0, 0, 0);
   ellipse(350, 200, 20, 20);
-  
 }
